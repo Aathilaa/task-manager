@@ -1,0 +1,82 @@
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+  }
+  
+  .edit-modal-content {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  input, textarea {
+    background-color: #292929;
+    color: #e0e0e0;
+    border: 1px solid #3c3c3c;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+  }
+  .edit-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #45a049;
+}
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .edit-modal-content {
+      width: 95%; /* Use almost full width on smaller screens */
+      padding: 15px; /* Reduce padding */
+  }
+
+  input, textarea {
+      padding: 8px; /* Reduce padding for input/textarea */
+      font-size: 14px; /* Adjust font size */
+  }
+
+  button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 5px 8px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-modal-content {
+      padding: 10px; /* Further reduce padding */
+      border-radius: 5px; /* Adjust border radius */
+  }
+
+  input, textarea {
+      font-size: 12px; /* Smaller font size */
+      padding: 5px; /* Smaller padding */
+  }
+
+  button {
+      font-size: 12px; /* Smaller font size */
+      padding: 4px 6px; /* Smaller button padding */
+  }
+}

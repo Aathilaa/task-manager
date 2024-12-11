@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-app-container {
+  /* width: 100%; */
+  max-width: 900px;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-group {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+}
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  /* left: 2px; */
+  color: #e0e0e0;
+}
+
+.add-task-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+input , textarea{
+  background-color: #e0e0e0;
+  color: #6c6b6b;
+  border: 1px solid #3c3c3c;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  
+  
+}
+.inputstyle{
+  background-color: #e0e0e0;
+  color: #6c6b6b;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-top: 20px;
+  height:40px;
+}
+
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .todo-app-container {
+    max-width: 100%;
+    margin-left: 10%; /* Center with equal margins left and right */
+    margin-right: 10%;
+    padding: 10px 10px;
+  }
+
+  .add-task-section {
+    flex-direction: column; /* Stack input fields vertically */
+    align-items: center; /* Center-align inputs */
+  }
+
+  input,
+  textarea {
+    max-width: 100%; /* Full width for inputs on smaller screens */
+  }
+
+  button {
+    width: 60px; /* Full width for buttons on smaller screens */
+    max-width: 400px; /* Restrict size for larger phones */
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .todo-app-container {
+    max-width: 100%;
+    margin: 10px auto; 
+  }
+  h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  input,
+  textarea {
+    font-size: 14px; /* Adjust font size for smaller inputs */
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+ 
+}
+
+
+
+
+
+
+  
